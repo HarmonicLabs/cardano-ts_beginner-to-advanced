@@ -1,5 +1,5 @@
 import { BlockfrostPluts } from "@harmoniclabs/blockfrost-pluts";
-import { Address, harden, PrivateKey, TxBuilder, Value, XPrv } from "@harmoniclabs/plu-ts";
+import { Address, harden, PrivateKey, PublicKey, TxBuilder, Value, XPrv } from "@harmoniclabs/plu-ts";
 import { mnemonicToEntropy } from "bip39";
 import { config } from "dotenv";
 
