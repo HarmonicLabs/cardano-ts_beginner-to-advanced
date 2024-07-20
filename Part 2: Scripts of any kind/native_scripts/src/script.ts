@@ -44,4 +44,4 @@ export const shared = new Script<"NativeScript">(
     }).toBuffer()
 );
 
-export const script = shared;
+export const script = multisig;

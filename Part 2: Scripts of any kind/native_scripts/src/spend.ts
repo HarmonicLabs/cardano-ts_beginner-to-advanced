@@ -1,6 +1,6 @@
 import { Address, Credential, DataI, TxBuilder, Value } from "@harmoniclabs/plu-ts";
 import { script } from "./script";
-import { addr0, priv0 } from "./addrs";
+import { addr0, priv0, priv1 } from "./addrs";
 import { blockfrost } from "./blockfrost";
 
 void async function main()
@@ -33,10 +33,8 @@ void async function main()
         changeAddress: addr0
     });
 
-    // remove redeeers (not needed)
-    tx = txBuilder.overrideTxRedeemers(tx, []);
-
     tx.signWith( priv0 );
+    tx.signWith( priv1 );
 
     console.log(
         JSON.stringify(
@@ -48,5 +46,5 @@ void async function main()
 
     await blockfrost.submitTx( tx );
 
-    console.log( "link: https://preprod.cardanoscan.io/transaction/" + tx.hash.toString() );
+    console.log( "link: https://preprod.cexplorer.io/tx/" + tx.hash.toString() );
 }();

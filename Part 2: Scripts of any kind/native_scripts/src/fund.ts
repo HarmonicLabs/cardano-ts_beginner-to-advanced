@@ -44,5 +44,5 @@ void async function main()
 
     await blockfrost.submitTx( tx );
 
-    console.log( "link: https://preprod.cardanoscan.io/transaction/" + tx.hash.toString() );
+    console.log( "link: https://preprod.cexplorer.io/tx/" + tx.hash.toString() );
 }();
