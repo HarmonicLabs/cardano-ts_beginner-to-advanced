@@ -27,8 +27,7 @@ void async function main()
         outputs: [
             {
                 address: scriptAddr,
-                value: Value.lovelaces( 10_000_000 ),
-                datum: new DataI( 0 )
+                value: Value.lovelaces( 10_000_000 )
             }
         ]
     });
