@@ -7,8 +7,8 @@
     "start": "npm run build && node dist/index.js"
   },
   "dependencies": {
-    "@harmoniclabs/blockfrost-pluts": "^0.1.13",
-    "@harmoniclabs/plu-ts": "^0.8.0-dev8",
+    "@harmoniclabs/blockfrost-pluts": "^0.1.14",
+    "@harmoniclabs/plu-ts": "^0.8.0-dev9",
     "@harmoniclabs/uint8array-utils": "^1.0.0",
     "bip39": "^3.1.0",
     "dotenv": "^16.4.5"
