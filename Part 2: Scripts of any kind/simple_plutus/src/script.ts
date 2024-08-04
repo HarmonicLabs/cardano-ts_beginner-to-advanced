@@ -4,7 +4,7 @@ import { addr0, addr1 } from "./addrs";
 const contract = pfn([
     PScriptContext.type
 ], unit)
-( (ctx) => pmakeUnit() );
+(({ tx, purpose, redeemer }) => pmakeUnit() );
 
 const compiled = compile( contract );
 

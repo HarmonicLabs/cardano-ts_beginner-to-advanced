@@ -1,0 +1,1 @@
+![what is my purpose?](./assets/what_is_my_purpose.jpeg)

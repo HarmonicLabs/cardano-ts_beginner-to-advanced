@@ -5,7 +5,8 @@
     "build:light": "tsc --project ./tsconfig.json && tsc-alias -p ./tsconfig.json",
     "buidl": "npm run build",
     "fund": "npm run build && node dist/fund.js",
-    "spend": "npm run build && node dist/spend.js"
+    "spend": "npm run build && node dist/spend.js",
+    "mint": "npm run build && node dist/mint.js"
   },
   "dependencies": {
     "@harmoniclabs/blockfrost-pluts": "^0.1.14",
