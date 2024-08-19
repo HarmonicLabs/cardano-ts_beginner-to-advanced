@@ -27,7 +27,14 @@ async function testDir( path: string )
                 entry.isFile() &&
                 entry.name === "package.json"
             )) return;
-            await new Promise<void>( res => exec("npm update", () => res() ) );
+            await new Promise<void>( res => 
+                exec(
+                    `cd ${path} && npm update`,
+                    ( err, stdout, stderr ) => {
+                        res();
+                    }
+                )
+            );
             console.log("Updated", nextPath);
         })
     );
