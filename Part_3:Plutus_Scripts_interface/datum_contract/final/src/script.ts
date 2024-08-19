@@ -45,7 +45,7 @@ const contract = pfn([
 
         const isValueLocked = plet(
             ownOut.value.lovelaces
-            .gtEq( ownValue.lovelaces )
+            .gtEq( input.value.lovelaces )
         );
 
         // modify this

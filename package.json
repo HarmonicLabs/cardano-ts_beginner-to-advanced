@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/node": "^22.4.1"
+  },
+  "scripts": {
+    "update-all": "npx tsx helper_scripts/update-all.ts"
+  }
+}
